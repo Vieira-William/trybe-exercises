@@ -39,6 +39,51 @@
       </div>
     </div>
     <script>
+
+    //Exercicio 01
+    function changeText() {
+      let paragraph = document.getElementsByTagName('p')[1];
+      paragraph.innerHTML = "Ficar rico !!"
+    } 
+    changeText()
+
+    //Exercicio 02
+    function changeSquareToGreen() {
+      let squareYellow = document.getElementsByClassName('main-content')[0];
+      squareYellow.style.background = "rgb(76,164,109)";
+    }
+    changeSquareToGreen();
+
+    //Exercicio 03
+    function changeSquareToWhite() {
+      let squareRed = document.getElementsByClassName('center-content')[0];
+      squareRed.style.background = "white";
+    }
+    changeSquareToWhite();
+
+    //Exercicio 04
+    function changeTextH1() {
+      let paragraph = document.getElementsByTagName('h1')[0];
+      paragraph.innerHTML = "Exercício 5.1 - JavaScript"
+    } 
+    changeTextH1()
+
+    
+    //Exercicio 05
+    function changeTextP() {
+      let paragraph = document.getElementsByTagName('p')[0];
+      paragraph.innerHTML = paragraph.innerHTML.toUpperCase()
+    } 
+    changeTextP()
+
+    //Exercicio 06
+    function consolePrint() {
+      let paragraph = document.getElementsByTagName('p');
+      for ( k in paragraph) {
+        console.log(paragraph[k].innerHTML)
+      } 
+    } 
+    consolePrint()
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
